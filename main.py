@@ -4,7 +4,7 @@ from explainerdashboard import ClassifierExplainer, ExplainerDashboard
 
 model = pickle.load(open('trained_model', 'rb'))
 data = pickle.load(open('test_data', 'rb'))
-X_test, y_test = data
+X_test = data
 
 explainer = ClassifierExplainer(model, X_test) #, y_test)
 # ExplainerDashboard(explainer).run()
