@@ -1,5 +1,5 @@
 # explainerdashboard via heroku
-by: Chakib BELAFDIL
+by: Enzo Etelbert
 
 Repo permettant la mise en ligne d'un explainerdashboard
 

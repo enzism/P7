@@ -16,6 +16,20 @@ model = LGBMClassifier(boosting='gbdt', learning_rate=0.1,
                        max_bin=510, num_leaves=16, objective='binary',
                        random_state=510, reg_alpha=1.2, reg_lambda=1.4,
                        subsample=0.7)
+clf = LGBMClassifier(
+            nthread=4,
+            n_estimators=10000,
+            learning_rate=0.02,
+            num_leaves=34,
+            colsample_bytree=0.9497036,
+            subsample=0.8715623,
+            max_depth=8,
+            reg_alpha=0.041545473,
+            reg_lambda=0.0735294,
+            min_split_gain=0.0222415,
+            min_child_weight=39.3259775,
+            silent=-1,
+            verbose=-1, )
 
 model.fit(X_train, y_train)
 
